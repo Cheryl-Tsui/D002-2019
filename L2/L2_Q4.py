@@ -1,8 +1,8 @@
 max=-999
-for a in range (1,60):
-    for b in range (1,60):
-        for c in range (1,60):
-            for d in range (1,60):
+for a in range (1,61):
+    for b in range (1,61):
+        for c in range (1,61):
+            for d in range (1,61):
                 e=a*b
                 f=b*c
                 g=c*d
