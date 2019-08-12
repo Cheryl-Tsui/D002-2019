@@ -10,7 +10,4 @@ for a in range (1,61):
                 if (a+b+c+d==60):
                     while i>max:
                         max=i
-                        print(i)
-                    
-                    
-                    
+                        print("max=%d"%i)
