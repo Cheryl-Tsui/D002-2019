@@ -20,12 +20,6 @@ def printer(secret, opened):
                 print(p, end="")
                 i=i+1
                 
-            else:
-                k=len(secret)
-                for m in range (k):
-                    print("", end="_")
-                    i=i+1
-
     print("\n")
 
         
