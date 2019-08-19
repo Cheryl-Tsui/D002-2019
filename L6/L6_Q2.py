@@ -20,50 +20,12 @@ for x in range(100):
     print(car,goat_1,goat_2)
     choose=random.randint(1,3)
     if choose==car:
-        d=random.randint(1,2)
-        if d==1:
-            shown_goat==goat_1
-            print("Door %d is goat." %goat_1)
-        if d==2:
-            shown_goat==goat_2
-            print("Door %d is goat." %goat_2)
+        lose_change=lose_change+1
     elif choose==goat_1:
-        shown_goat==goat_2
-        print("Door %d is goat." %goat_2)
+        win_change=win_change+1
     elif choose==goat_2:
-        shown_goat==goat_1
-        print("Door %d is goat." %goat_1)
+        win_change=win_change+1
 
-    if choose==car:
-        d=random.randint(1,2)
-        if d==1:
-            new_choose==goat_1
-            lose_change=lose_change+1
-            continue
-        if d==2:
-            new_choose==goat_2
-            lose_change=lose_change+1
-            continue
-    elif choose==goat_1:
-        e=random.randint(1,2)
-        if e==1:
-            new_choose==car
-            win_change=win_change+1
-            continue
-        if e==2:
-            new_choose==goat_2
-            lose_change=lose_change+1
-            continue
-    elif choose==goat_2:
-        f=random.randint(1,2)
-        if f==1:
-            new_choose==car
-            win_change=win_change+1
-            continue
-        if f==2:
-            new_choose==goat_1
-            lose_change=lose_change+1
-            continue
 print("Win change:%d." %win_change)
 print("Lose change:%d." %lose_change)
 
@@ -113,5 +75,3 @@ if win_change<win_same:
     print("Since win_change<win_same, does not change is better.")
 if win_change==win_same:
     print("There is no difference in terms of which one is better.")
-    
-    
